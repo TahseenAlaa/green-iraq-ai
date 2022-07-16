@@ -22,4 +22,15 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 
-.idea/
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env.backup
+auth.json
+/.idea
+/.vscode
+package-lock.json
+composer.lock
