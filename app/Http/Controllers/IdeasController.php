@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Http;
 use Mockery\Exception;
 use phpDocumentor\Reflection\Types\Void_;
+use App\Models\Ideas;
 
 class IdeasController extends Controller
 {
@@ -41,7 +42,10 @@ class IdeasController extends Controller
                 "presence_penalty" => 0,
             ]);
             //OpenAI API result
-            return $response['choices'][0]['text'];
+//            return $response['choices'][0]['text'];
+            $newIdea = new Ideas;
+            $newIdea->idea = $response['choices'][0]['text'];
+            $newIdea->save();
 
         } catch (Exception $e) {
             echo 'Caught Exception:' . $e->getMessage();

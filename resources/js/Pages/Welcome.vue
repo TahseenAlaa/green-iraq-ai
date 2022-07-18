@@ -1,7 +1,14 @@
 <template>
-    <div class="flex inline-block flex-wrap justify-center">
-        <div class="max-w-md my-8 mx-8 px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-2xl">
-            <p class="mt-2 py-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!</p>
+    <div class="flex inline-block flex-wrap justify-center my-12">
+        <div
+            v-for="idea in ideas"
+            :key="idea.id"
+            class="max-w-md my-8 mx-8 px-8 py-4 mx-auto my-auto mt-8 bg-white rounded-lg shadow-2xl">
+            <p
+                v-text="idea.idea"
+                class="mt-2 py-4 text-gray-600">
+
+            </p>
             <div class="flex justify-between mt-4">
                 <div class="justify-center flex-row flex cursor-pointer">
                     <p class="text-md font-medium bg-gray-50 rounded-md p-1 mx-1 flex flex-row">
@@ -27,7 +34,10 @@
 import Layout from "@/Pages/shared/Layout.vue";
 
 export default {
-    layout: Layout
+    layout: Layout,
+    props: {
+        ideas: Array
+    }
 }
 </script>
 
