@@ -3,8 +3,8 @@
         <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <div>
-                    <a class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">
-                        <img src="../../../img/green-iraq-ai-logo.png" width="96" height="59" alt="Green Iraq AI Logo">
+                    <a class="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#"><span style="color: #b4ec50">Green Iraq AI</span>
+<!--                        <img src="../../../img/green-iraq-ai-logo.png" width="96" height="59" alt="Green Iraq AI Logo">-->
                     </a>
                 </div>
             </div>
