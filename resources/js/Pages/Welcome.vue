@@ -6,7 +6,7 @@
             class="max-w-md my-8 mx-8 px-8 py-4 mx-auto my-auto mt-8 bg-white rounded-lg shadow-2xl">
             <p
                 v-text="idea.idea"
-                class="mt-2 py-4 text-gray-600">
+                class="mt-2 py-4 text-gray-600 whitespace-pre-line">
 
             </p>
             <div class="flex justify-between mt-4">
