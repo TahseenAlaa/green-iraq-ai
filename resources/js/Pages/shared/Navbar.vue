@@ -25,9 +25,6 @@
         </div>
         <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
             <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-                <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                    Green Iraq AI
-                </p>
                 <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
                     Think Smarter<br class="hidden md:block" />
                     The Earth needs you
