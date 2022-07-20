@@ -1,17 +1,17 @@
 <template>
-    <div class="flex inline-block flex-wrap justify-center my-12">
+    <div class="flex inline-block flex-wrap justify-center mt-12">
         <div
             v-for="idea in ideas"
             :key="idea.id"
-            class="max-w-md my-8 mx-8 px-8 py-4 mx-auto my-auto mt-8 bg-white rounded-lg shadow-2xl">
+            class="max-w-md my-8 mx-8 px-8 pb-4 mx-auto my-auto mt-8 bg-white rounded-lg shadow-2xl">
             <p
                 v-text="idea.idea"
-                class="mt-2 py-4 text-gray-600 whitespace-pre-line">
+                class="mt-2 pb-4 text-gray-600 whitespace-pre-line">
 
             </p>
             <div class="flex justify-between mt-4">
                 <div class="justify-center flex-row flex cursor-pointer">
-                    <p class="text-md font-medium bg-gray-50 rounded-md p-1 mx-1 flex flex-row">
+                    <p class="text-md font-medium bg-gray-50 rounded-sm p-1 mx-1 flex flex-row">
                         <span class="text-red-700"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
                             </svg></span>
