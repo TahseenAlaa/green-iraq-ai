@@ -17,7 +17,17 @@ class IdeasController extends Controller
 
     public function index()
     {
-        $prompt = "Brainstorm some ideas for fighting climate change, desertification, and drought";
+        $prompt = [
+            "Brainstorm some ideas for fighting climate change",
+            "Brainstorm some ideas for fighting desertification",
+            "Brainstorm some ideas for fighting drought",
+            "Suggest ideas for fighting climate change",
+            "Suggest ideas for fighting climate desertification",
+            "Suggest ideas for fighting climate drought",
+        ];
+
+        // Random select prompt from the array to cover wide range of possible ideas
+        $selectedPrompt = $prompt[array_rand($prompt)];
 
         // Maximum token you want to use as an output, One token is roughly 4 characters for normal English text.
         // Best practises is to set token length to 256.
@@ -34,7 +44,7 @@ class IdeasController extends Controller
                 'Content-Type' => 'application/json',
                 'Authorization' => "Bearer $APIKey"
             ])->post("https://api.openai.com/v1/engines/$engine/completions", [
-                'prompt' => $prompt,
+                'prompt' => $selectedPrompt,
                 "temperature" => 0.9,
                 "max_tokens" => $maxTokens,
                 "top_p" => 1,
